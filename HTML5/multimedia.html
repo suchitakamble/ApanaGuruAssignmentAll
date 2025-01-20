@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Multimedia Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin: 20px auto;
+        }
+
+        svg {
+            display: block;
+            margin: 20px auto;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 20px auto;
+        }
+
+        embed {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HTML Multimedia Assignment</h1>
+    </header>
+
+    <main>
+        <!-- SVG Section -->
+        <section>
+            <h2>Graphics (SVG)</h2>
+            <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="80" fill="blue" />
+                <text x="100" y="110" font-size="20" text-anchor="middle" fill="white">SVG</text>
+            </svg>
+        </section>
+
+        <!-- Canvas Section -->
+        <section>
+            <h2>Canvas Element</h2>
+            <canvas id="drawingCanvas" width="300" height="300"></canvas>
+            <button onclick="changeCanvasColor()">Change Canvas Color</button>
+        </section>
+
+        <!-- Video and Audio Section -->
+        <section>
+            <h2>Video and Audio</h2>
+            <video controls width="320" height="240">
+                <source src="example-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <audio controls>
+                <source src="example-audio.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <!-- Embedded Content Section -->
+        <section>
+            <h2>Embedded Content</h2>
+            <embed src="https://www.example.com" width="400" height="300">
+        </section>
+    </main>
+
+    <script>
+        // Canvas interaction logic
+        const canvas = document.getElementById('drawingCanvas');
+        const context = canvas.getContext('2d');
+
+        context.fillStyle = "lightgray";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+
+        function changeCanvasColor() {
+            context.fillStyle = context.fillStyle === "lightgray" ? "lightblue" : "lightgray";
+            context.fillRect(0, 0, canvas.width, canvas.height);
+        }
+    </script>
+</body>
+
+</html>

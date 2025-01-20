@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+  }
+  
+  /* Invitation Background */
+  .invitation-background {
+    width: 150mm;
+    height: 200mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Invitation Card */
+  .invitation-card {
+    width: 130mm;
+    padding: 15mm;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Header Styles */
+  .invitation-header {
+    margin-bottom: 20pt;
+  }
+  
+  .logo {
+    width: 50mm;
+    height: auto;
+    margin-bottom: 10pt;
+  }
+  
+  .invitation-header h1 {
+    font-size: 24pt;
+    color: #333333;
+    margin: 0;
+  }
+  
+  /* Content Styles */
+  .invitation-content {
+    font-size: 12pt;
+    color: #555555;
+    line-height: 1.6;
+  }
+  
+  .salutation {
+    font-style: italic;
+    margin-bottom: 10pt;
+  }
+  
+  .event-name {
+    font-size: 18pt;
+    font-weight: bold;
+    color: #ff7e5f;
+    margin: 10pt 0;
+  }
+  
+  .event-details {
+    margin: 10pt 0;
+    font-size: 12pt;
+  }
+  
+  .description {
+    font-size: 11pt;
+    margin: 15pt 0;
+  }
+  
+  .organizer {
+    font-size: 11pt;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 15pt;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .invitation-background {
+      width: 90%;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .invitation-card {
+      width: 100%;
+      padding: 10mm;
+    }
+  }
+  

@@ -1,0 +1,127 @@
+/* Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ddd;
+  }
+  
+  .certificate {
+    background-color: #2b2b2b;
+    width: 600px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+  }
+  
+  .outer-border {
+    background: linear-gradient(45deg, #f1c40f, #e67e22);
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inner-border {
+    background-color: #2b2b2b;
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .content {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f1c40f;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .design-line {
+    height: 2px;
+    width: 60px;
+    background: #f1c40f;
+    margin: 20px auto;
+  }
+  
+  .name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f1c40f;
+    margin: 20px 0;
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #bbbbbb;
+    margin: 20px 0;
+  }
+  
+  .date {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .signature {
+    margin-top: 40px;
+  }
+  
+  .instructor-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .instructor-title {
+    font-size: 16px;
+    color: #bbbbbb;
+  }
+  .outer-border {
+    background:  #f1c40f; /* Black color for the padding area */
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* Adding golden borders */
+    border-left: 30px solid black; /* Golden left border */
+    border-right: 30px solid black; /* Golden right border */
+    border-bottom: 30px solid black; /* Golden bottom border */
+    border-top: 100px solid black; /* Golden top border */
+    
+    /* Proper padding inside the borders */
+    padding: 20px;
+  }
+  
+  .instructor-name {
+    font-family: 'Dancing Script', cursive; /* Cursive font style */
+    font-size: 24pt; /* Adjust font size for elegance */
+    font-weight: bold;
+    color: #ffffff; /* White color for contrast */
+    margin: 10px 0; /* Space above and below */
+  }
+  
+  

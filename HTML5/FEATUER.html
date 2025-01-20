@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Features Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        aside {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HTML Features Assignment</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <article>
+                <h2>Welcome to My Page</h2>
+                <p>This is an example of an article section. It includes a brief description and a video.</p>
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Embedded YouTube Video"></iframe>
+            </article>
+        </section>
+
+        <section id="about">
+            <h2>About This Page</h2>
+            <p>This page demonstrates the use of various HTML5 elements.</p>
+        </section>
+
+        <aside>
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="#">HTML5 Guide</a></li>
+                <li><a href="#">CSS Basics</a></li>
+            </ul>
+        </aside>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Get in Touch</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" cols="30"></textarea>
+                    <br><br>
+                    <label for="topic">Topic:</label>
+                    <select id="topic" name="topic">
+                        <option value="general">General</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="support">Support</option>
+                    </select>
+                    <br><br>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Website | All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

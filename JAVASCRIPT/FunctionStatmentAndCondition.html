@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals</title>
+</head>
+<body>
+    <h1>JavaScript Fundamentals Demo</h1>
+
+    <h2>Conditional Statements</h2>
+    <div>
+        <h3>If Statement</h3>
+        <label for="age">Enter your age: </label>
+        <input type="number" id="age">
+        <button onclick="checkAge()">Check</button>
+        <p id="ageResult"></p>
+    </div>
+    <div>
+        <h3>If-Else Statement</h3>
+        <button onclick="checkMinorOrAdult()">Check if Minor or Adult</button>
+        <p id="minorResult"></p>
+    </div>
+    <div>
+        <h3>If-Else Ladder</h3>
+        <label for="score">Enter your score (0-100): </label>
+        <input type="number" id="score">
+        <button onclick="getGrade()">Get Grade</button>
+        <p id="gradeResult"></p>
+    </div>
+    <div>
+        <h3>Switch Statement</h3>
+        <label for="day">Enter a number (1-7): </label>
+        <input type="number" id="day">
+        <button onclick="getDayOfWeek()">Get Day</button>
+        <p id="dayResult"></p>
+    </div>
+    <div>
+        <h3>Ternary Operator</h3>
+        <label for="hasLicense">Do you have a driver's license? (yes/no): </label>
+        <input type="text" id="hasLicense">
+        <button onclick="canDrive()">Check</button>
+        <p id="driveResult"></p>
+    </div>
+
+    <h2>Functions</h2>
+    <div>
+        <h3>Named Function</h3>
+        <label for="num1">Number 1: </label>
+        <input type="number" id="num1">
+        <label for="num2">Number 2: </label>
+        <input type="number" id="num2">
+        <button onclick="addNumbers()">Add</button>
+        <p id="sumResult"></p>
+    </div>
+    <div>
+        <h3>Anonymous Function</h3>
+        <label for="arrayInput">Enter an array of numbers (comma-separated): </label>
+        <input type="text" id="arrayInput">
+        <button onclick="findMax()">Find Max</button>
+        <p id="maxResult"></p>
+    </div>
+    <div>
+        <h3>Arrow Function</h3>
+        <label for="stringInput">Enter a string: </label>
+        <input type="text" id="stringInput">
+        <button onclick="toUpperCase()">To Uppercase</button>
+        <p id="uppercaseResult"></p>
+    </div>
+
+    <h2>Loops</h2>
+    <div>
+        <h3>For Loop</h3>
+        <label for="tableNumber">Enter a number: </label>
+        <input type="number" id="tableNumber">
+        <button onclick="printTable()">Show Table</button>
+        <p id="tableResult"></p>
+    </div>
+    <div>
+        <h3>While Loop</h3>
+        <label for="countdownStart">Enter countdown start number: </label>
+        <input type="number" id="countdownStart">
+        <button onclick="countdown()">Start Countdown</button>
+        <p id="countdownResult"></p>
+    </div>
+    <div>
+        <h3>Do-While Loop</h3>
+        <button onclick="quiz()">Start Quiz</button>
+        <p id="quizResult"></p>
+    </div>
+
+    <script src="FunctionStatmentAndCondition.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<h1>Hello World.......!</h1>
+
+<h2 [title]="h2Title">{{ title }}</h2>
+
+<!-- Arithmetic operation -->
+<p>{{ 2 + 4 }}</p>
+
+<!-- Variable multiplication -->
+<p>{{ a * b }}</p>
+
+<!-- Method call -->
+<p>{{ getFullName() }}</p>
+
+<!-- Conditional rendering -->
+<p>{{ a > 5 ? 'A is greater than 5' : 'A is not greater than 5' }}</p>
+
+<!-- Binding with title and innerHTML -->
+<h2 [title]="h1Title" [innerHTML]="html"></h2>
+
+<!-- Button click event -->
+<button (click)="buttonClicked($event)">Click me</button>
+
+<!-- Mouseover and mouseout events with conditional styling -->
+<p
+  (mouseover)="onMouseOver($event)"
+  (mouseout)="onMouseOut($event)"
+  [style.color]="ifMouseOver ? 'red' : 'green'"
+>
+  Wishing you a joyful Makar Sankranti! May the kites of happiness soar high in your life,<br>
+  and may the sweetness of til and gud fill your days with warmth and love. Celebrate this<br>
+  festival with joy and gratitude!
+</p>
+
+<!-- Table with student data -->
+<table>
+  <thead>
+    <tr>
+      <th>Sr.no</th>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>DOB</th>
+      <th>First</th>
+      <th>Last</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="let singleStudent of studentList; let i = index; let f = first; let l = last"
+      [ngClass]="{
+        'background-red': singleStudent.percentage <= 70,
+        'background-yellow': singleStudent.percentage > 70 && singleStudent.percentage < 90,
+        'background-green': singleStudent.percentage >= 90
+      }"
+    >
+      <td>{{ i + 1 }}</td>
+      <td>{{ singleStudent.name }}</td>
+      <td>{{ singleStudent.gender }}</td>
+      <td>{{ singleStudent.Dob }}</td>
+      <td>{{ f }}</td>
+      <td>{{ l }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- NGIf Directive -->
+<button (click)="toggleHasPermission($event)">Has Permission Toggle</button>
+<div *ngIf="hasPermission; else elseRef">
+  This content will be shown if hasPermission is true.
+</div>
+<ng-template #elseRef>
+  <div>
+    This content will be shown if hasPermission is false.
+  </div>
+</ng-template>
+
+<!-- NgSwitch Directive -->
+<div [ngSwitch]="num2">
+  <div *ngSwitchCase="10">Num2 is 10.</div>
+  <div *ngSwitchCase="20">Num2 is 20.</div>
+  <div *ngSwitchCase="30">Num2 is 30.</div>
+  <div *ngSwitchDefault>Num2 is not 10, 20, or 30.</div>
+</div>
+
+<!-- Name Input -->
+<div>
+  <label for="name">Name:</label>
+  <input
+    type="text"
+    name="name"
+    id="name"
+    [(ngModel)]="student.userName"
+    placeholder="Enter your name"
+    title="Name of student"
+  />
+</div>
+<div>
+  <strong>Name:</strong> {{ student.userName }}
+</div>
+
+<!-- Date of Birth Input -->
+<div>
+  <label for="dob">Date of Birth:</label>
+  <input
+    type="date"
+    name="dob"
+    id="dob"
+    [(ngModel)]="student.DOB"
+    placeholder="Select your date of birth"
+    title="Date of Birth"
+  />
+</div>
+<div>
+  <strong>Date of Birth:</strong> {{ student.DOB }}
+</div>
+
+<!-- Mobile Number Input -->
+<div>
+  <label for="mobile">Mobile Number:</label>
+  <input
+    type="tel"
+    name="mobile"
+    id="mobile"
+    [(ngModel)]="student.userMobile"
+    placeholder="Enter your mobile number"
+    title="Mobile Number"
+    pattern="[0-9]{10}"
+  />
+</div>
+<div>
+  <strong>Mobile Number:</strong> {{ student.userMobile }}
+</div>
+
+<!-- Email ID Input -->
+<div>
+  <label for="email">Email ID:</label>
+  <input
+    type="email"
+    name="email"
+    id="email"
+    [(ngModel)]="student.userEmail"
+    placeholder="Enter your email ID"
+    title="Email ID"
+  />
+</div>
+<div>
+  <strong>Email ID:</strong> {{ student.userEmail }}
+</div>
+
+<!-- ngClass Directive -->
+<div
+  [ngClass]="{
+    'background-red': bgcolor == 1,
+    'background-blue': bgcolor !== 1
+  }">
+</div>
+<!---pipes-->
+
+
+
+
+{{currentDate | date}}<br>
+{{currentDate1 | date:"dd/MM/yyyy"}}<br>
+{{currentDate2 | date:"dd/MMM/yyyy"}}<br>
+{{currentDate3 | date:"dd/MM/yyyy - hh:mm:ss"}}<br>
+
+<!--Upper case-->
+
+<h1>{{heading|uppercase}}</h1>
+
+<!--lower case-->
+
+<h1>{{heading|lowercase}}</h1>
+
+<!--title case-->
+
+<h1>{{heading|titlecase}}</h1>
+
+

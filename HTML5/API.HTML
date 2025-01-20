@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML API Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, button {
+            padding: 8px;
+            width: 100%;
+        }
+
+        .location {
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HTML API Assignment</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Save Preferences</h2>
+            <form id="preferencesForm">
+                <div class="form-group">
+                    <label for="theme">Theme:</label>
+                    <input type="text" id="theme" placeholder="Enter your preferred theme">
+                </div>
+                <div class="form-group">
+                    <label for="sessionData">Session Data:</label>
+                    <input type="text" id="sessionData" placeholder="Enter session data">
+                </div>
+                <button type="button" onclick="savePreferences()">Save Preferences</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Your Location</h2>
+            <button type="button" onclick="getLocation()">Get Location</button>
+            <div class="location" id="locationDisplay"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>HTML API Assignment &copy; 2025</p>
+    </footer>
+
+    <script>
+        // Storage Implementation
+        function savePreferences() {
+            const theme = document.getElementById('theme').value;
+            const sessionData = document.getElementById('sessionData').value;
+
+            // Save to localStorage
+            localStorage.setItem('theme', theme);
+
+            // Save to sessionStorage
+            sessionStorage.setItem('sessionData', sessionData);
+
+            alert('Preferences saved successfully!');
+        }
+
+        // Geolocation API
+        function getLocation() {
+            const locationDisplay = document.getElementById('locationDisplay');
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const { latitude, longitude } = position.coords;
+                        locationDisplay.innerHTML = `
+                            <p>Latitude: ${latitude}</p>
+                            <p>Longitude: ${longitude}</p>
+                        `;
+                    },
+                    (error) => {
+                        locationDisplay.textContent = 'Unable to retrieve location.';
+                    }
+                );
+            } else {
+                locationDisplay.textContent = 'Geolocation is not supported by this browser.';
+            }
+        }
+    </script>
+</body>
+
+</html>

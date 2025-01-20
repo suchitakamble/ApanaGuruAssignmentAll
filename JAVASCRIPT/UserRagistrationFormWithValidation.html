@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .error {
+      color: red;
+      font-size: 0.8em;
+    }
+    input {
+      display: block;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>User Registration Form</h1>
+  <form id="registrationForm">
+    <label>
+      Full Name:
+      <input type="text" id="fullName" />
+      <span class="error" id="fullNameError"></span>
+    </label>
+    <label>
+      Email Address:
+      <input type="email" id="email" />
+      <span class="error" id="emailError"></span>
+    </label>
+    <label>
+      Password:
+      <input type="password" id="password" />
+      <span class="error" id="passwordError"></span>
+    </label>
+    <label>
+      Confirm Password:
+      <input type="password" id="confirmPassword" />
+      <span class="error" id="confirmPasswordError"></span>
+    </label>
+    <button type="submit">Register</button>
+  </form>
+  <script src="UserRagistrationFormWithValidation.js"></script>
+</body>
+</html>

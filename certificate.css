@@ -1,0 +1,80 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+  }
+  
+  .certificate-background {
+    background: linear-gradient(135deg, #ffffff, #e6e9f0);
+    border-radius: 15mm;
+    padding: 20mm;
+    box-shadow: 0 4mm 8mm rgba(0, 0, 0, 0.2);
+    width: 210mm;
+    height: 148mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .certificate-container {
+    text-align: center;
+    background: #fff;
+    padding: 10mm;
+    border-radius: 10mm;
+    box-shadow: 0 2mm 4mm rgba(0, 0, 0, 0.1);
+  }
+  
+  .certificate-header {
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 50mm;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 24pt;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+  }
+  
+  .certificate-content p {
+    font-size: 12pt;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .recipient-name {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .course-name {
+    font-size: 18pt;
+    color: #333;
+  }
+  
+  .date {
+    font-size: 14pt;
+    color: #777;
+  }
+  
+  .certificate-footer {
+    margin-top: 20px;
+  }
+  
+  .issuer-details p {
+    margin: 5px 0;
+    font-size: 12pt;
+    color: #333;
+  }
+  
