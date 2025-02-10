@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Card Carousel Example</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="text-center font-weight-bold mb-4">We Maintain Cleanliness Rules Inside Our Hospital</h2>
+
+        <div class="text-center mb-4">
+            <img src="Image/WhatsApp Image 2025-01-20 at 12.46.44 PM.jpeg" alt="website template image" class="img-fluid w-25">
+        </div>
+
+        <!-- Carousel Wrapper -->
+        <div id="cardCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Carousel Item 1 -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <card-component 
+                                data='{
+                                    "title": " ", 
+                                    "subTitle": " ", 
+                                    "description": " ", 
+                                    "image": "Image/two-happy-busy-middle-aged-260nw-2479065515.webp", 
+                                    "button": "Click Me", 
+                                    "link": "https://example.com"}'>
+                            </card-component>
+                        </div>
+                        <div class="col-md-3">
+                            <card-component 
+                                data='{
+                                  "title": " ", 
+                                    "subTitle": " ", 
+                                    "description": " ", 
+                                    "image": "Image/istockphoto-1447289800-612x612.jpg", 
+                                    "button": "Click Me", 
+                                    "link": "https://example.com"}'>
+                            </card-component>
+                        </div>
+                        <div class="col-md-3">
+                            <card-component 
+                                data='{
+                                  "title": " ", 
+                                    "subTitle": " ", 
+                                    "description": " ", 
+                                    "image": "Image/iStock-1503623722-1.jpg", 
+                                    "button": "Click Me", 
+                                    "link": "https://example.com"}'>
+                            </card-component>
+                        </div>
+                        <div class="col-md-3">
+                            <card-component 
+                                data='{
+                                  "title": " ", 
+                                    "subTitle": " ", 
+                                    "description": " ", 
+                                    "image": "Image/download.jpg", 
+                                    "button": "Click Me", 
+                                    "link": "https://example.com"}'>
+                            </card-component>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Item 2 -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <card-component 
+                                data='{
+                                  "title": " ", 
+                                    "subTitle": " ", 
+                                    "image": "Image/iStock-1503623722-1.jpg",
+                                    "button": "Click Me", 
+                                    "link": "https://example.com"}'>
+                            </card-component>
+                        </div>
+                        <div class="col-md-3">
+                            <card-component 
+                                data='{
+                                  "title": " ", 
+                                    "subTitle": " ", 
+                                    "description": " ", 
+                                    "image": "Image/two-happy-busy-middle-aged-260nw-2479065515.webp", 
+                                    "button": "Click Me", 
+                                    "link": "https://example.com"}'>
+                            </card-component>
+                        </div>
+                        <div class="col-md-3">
+                            <card-component 
+                                data='{
+                                    "title": " ", 
+                                    "subTitle": " ", 
+                                    "image": "Image/two-happy-busy-middle-aged-260nw-2479065515.webp",
+                                    "button": "Click Me", 
+                                    "link": "https://example.com"}'>
+                            </card-component>
+                        </div>
+                        <div class="col-md-3">
+                            <card-component 
+                                data='{
+                                  "title": " ", 
+                                    "subTitle": " ", 
+                                    "image": "Image/istockphoto-1447289800-612x612.jpg", 
+                                    "button": "Click Me", 
+                                    "link": " google chrome"}'>
+                            </card-component>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Carousel Controls -->
+            <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
